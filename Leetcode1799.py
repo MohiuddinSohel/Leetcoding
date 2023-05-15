@@ -1,6 +1,6 @@
 class Solution:
     # order of operation matters here
-    def maxScore(self, nums) -> int:
+    def maxScore(nums) -> int:
         def gcd(n1, n2):
             while n1:
                 temp = n1
@@ -30,8 +30,7 @@ class Solution:
 
 if __name__ == '__main__':
     nums = [171651, 546244, 880754, 412358]
-    sol = Solution()
-    print(sol.maxScore(nums))
+    print(Solution.maxScore(nums))
 
 
 '''
