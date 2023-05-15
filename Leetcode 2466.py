@@ -1,7 +1,8 @@
 class Solution:
     def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:
         def dfs(current_len):
-            # this approach can not be iterative since in iterativer version we will have to count string with length < low
+            # this approach can not be iterative since in iterativer version we will have to count string with length
+            # < low
             if current_len > high:
                 return 0
             elif current_len == high:
@@ -29,6 +30,12 @@ class Solution:
         dp = [-1] * high
         mod = 10 ** 9 + 7
         return dfs(0)
+
+
+if __name__ == '__main__':
+    sol = Solution()
+    print(sol.countGoodStrings(2, 3, 1, 2))
+
 '''
 Given the integers zero, one, low, and high, we can construct a string by starting with an empty string, and then at each step perform either of the following:
 
