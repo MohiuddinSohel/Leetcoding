@@ -40,6 +40,9 @@ if __name__ == '__main__':
     word = "cbaaaabc"
     forbidden = ["aaa","cb"]
     print(Solution().longestValidSubstring(word, forbidden))
+    a = ['a', 'b', 'c', 'd']
+    print(a[-1::-1], a[0::-1],a[1::-1], a[2::-1], a[3::-1], a[4::-1])
+    print(a[:-1:-1], a[:0:-1], a[:1:-1], a[:2:-1], a[:3:-1], a[:4:-1])
 
 """
 You are given a string word and an array of strings forbidden.
@@ -73,4 +76,9 @@ word consists only of lowercase English letters.
 1 <= forbidden.length <= 105
 1 <= forbidden[i].length <= 10
 forbidden[i] consists only of lowercase English letters.
+
+
+["MyLinkedList","addAtHead","addAtIndex","get","addAtHead","addAtTail","get","addAtTail","get","addAtHead","get","addAtHead"]
+[[],               [5],       [1,2],      [1],     [6],       [2],     [3],     [1],      [5],    [2],      [2],    [6]]
+
 """
